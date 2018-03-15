@@ -1,5 +1,5 @@
 {
-  "name": "browser-sync-sample",
+  "name": "browser-sync-api-sample",
   "version": "1.0.0",
   "scripts": {
     "start": "browser-sync start --config bs-config.js"
