@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">/api</button>
+    <ul id="list"></ul>
+    <script>
+        var list = document.getElementById('list');
+        var button = document.getElementById('button');
+        button.addEventListener('click', function() {
+            handleClick();
+        });
+
+        function handleClick() {
+            fetch('/api').then(function(res) {
+                return res.json();
+            }).then(function(json) {
+                list.appendChild(createElement(json.text));
+            });
+        }
+
+        function createElement(text) {
+            var li = document.createElement('li');
+            li.textContent = text;
+            return li;
+        }
+    </script>
+</body>
+</html>

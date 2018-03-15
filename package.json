@@ -1,0 +1,12 @@
+{
+  "name": "browser-sync-sample",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "browser-sync start --config bs-config.js"
+  },
+  "author": "Naoyuki Miyazaki <miyazaki@buddying.jp>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.23.6"
+  }
+}
